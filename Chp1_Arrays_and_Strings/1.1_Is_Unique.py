@@ -1,6 +1,5 @@
 """
 Implement an algorithm to determine if a string has all unique charachters.
-
 What if you cant use additional charachters?
 """
 
@@ -13,6 +12,8 @@ class Solution:
             d[letter] = 1
         return True
 
+# Time  : O(n)
+# Space : O(n)
 
 class Solution2:
     def isUnique(self, s):
@@ -22,6 +23,8 @@ class Solution2:
                 return False
         return True
 
+# Time  : O(n logn)
+# Space : O(1)
 
 test1 = Solution()
 assert(test1.isUnique('s'))
