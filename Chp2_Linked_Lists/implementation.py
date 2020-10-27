@@ -56,8 +56,8 @@ class SLinkedList:
         while cur:
             seen.append(str(cur.data))
             cur = cur.next
-        return print("->".join(seen))
-
+        print("->".join(seen))
+        return
 
 # l = SLinkedList()
 # l.pushToFront('c')
